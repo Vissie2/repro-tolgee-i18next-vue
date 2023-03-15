@@ -1,7 +1,7 @@
 <template>
   <div>
     <code>$t based on `defaultNS`:</code>
-
+    <!-- This will remove the namespace -->
     <p>
       {{ $t('key') }}
     </p>
@@ -9,7 +9,7 @@
 
   <div>
     <code>t based on `defaultNS`:</code>
-
+    <!-- This will remove the namespace -->
     <p>
       {{ t('key') }}
     </p>
@@ -17,7 +17,7 @@
 
   <div>
     <code>$t with namespace:</code>
-
+    <!-- This will keep the namespace -->
     <p>
       {{ $t('key', { ns: 'test' }) }}
     </p>
@@ -25,7 +25,7 @@
 
   <div>
     <code>t with namespace:</code>
-
+    <!-- This will keep the namespace -->
     <p>
       {{ t('key', { ns: 'test' }) }}
     </p>
